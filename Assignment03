@@ -1,0 +1,12 @@
+import json
+
+file = open("student.json", "r")
+
+data = json.load(file)
+
+file.close()
+
+print("Student Details")
+print("Name:", data["name"])
+print("Roll Number:", data["roll_no"])
+print("Marks:", data["marks"])
